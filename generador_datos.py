@@ -19,7 +19,7 @@ with open("insert_masivo_banco.sql", "w", encoding="utf-8") as f:
         nombre = fake.name().replace("'", "''")
         dni = str(randint(10000000, 99999999))
         direccion = fake.address().replace("\n", ", ").replace("'", "''")
-        telefono = fake.phone_number().replace("'", "")
+        telefono = '9' + str(randint(10000000, 99999999))
         f.write(f"INSERT INTO Cliente (id_cliente, nombre, dni, direccion, telefono) VALUES ({i}, '{nombre}', '{dni}', '{direccion}', '{telefono}');\n")
 
     # CUENTAS
