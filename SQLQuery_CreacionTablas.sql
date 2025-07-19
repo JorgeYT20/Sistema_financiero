@@ -1,7 +1,14 @@
+--------------------------------------------------------
+-- SCRIPT DE CREACIÃ“N DE TABLAS PARA SISTEMA BANCARIO--
+--------------------------------------------------------
+--1. Crear la base de datos
+--2. Usar la base de datos
+--3. Usar el script para crear las tablas
+
 create database Sistema_finaciero;
 use Sistema_finaciero;
 
--- SCRIPT DE CREACIÓN DE TABLAS PARA SISTEMA BANCARIO
+-- SCRIPT DE CREACIÃ“N DE TABLAS PARA SISTEMA BANCARIO
 
 -- CLIENTE
 CREATE TABLE Cliente (
@@ -45,7 +52,7 @@ CREATE TABLE Prestamo (
     FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
 );
 
--- PAGO DE PRÉSTAMO
+-- PAGO DE PRÃ‰STAMO
 CREATE TABLE PagoPrestamo (
     id_pago INT PRIMARY KEY,
     id_prestamo INT,
